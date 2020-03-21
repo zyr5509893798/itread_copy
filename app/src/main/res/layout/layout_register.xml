@@ -4,6 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/register_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="14dp"
+            android:text="注册"
+            android:textSize="20sp"
+            android:textColor="#0f0000">
+        </TextView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/register_saw_1"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/shadow">
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/register_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="60dp"
+            android:hint=" 请输入邮箱"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_shape">
+        </EditText>
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/register_phone_number"
+            android:hint=" 请输入6~18位密码"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:background="@drawable/edittext_shape">
+        </EditText>
+
+        <EditText
+            android:id="@+id/register_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/register_password"
+            android:hint=" 请确认密码"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_shape">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_repassword"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="14dp"
+            android:text="* 密码可包含大小写字母、数字和下划线，长度6~18位">
+        </TextView>
+
+        <Button
+            android:id="@+id/register_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_repassword"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="14dp"
+            android:text="确认注册"
+            android:textSize="19sp"
+            android:textColor="#000000">
+        </Button>
+    </RelativeLayout>
 </LinearLayout>
